@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Raveland</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body id="map">
+    <button class="profil"></button>
+    <button class="settings">. . .</button>
+    <div class="transparent">
+
+    </div>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiamF3YTUzIiwiYSI6ImNreHprM3QydzJiam8ydm96Z3czYzJib2oifQ.Zer1pAq4zI2QLOj0unjgng';
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/jawa53/ckyiijyk73afc15oax8vqn6ta', // style URL
+        center: [47.53613, -18.91368], // starting position [lng, lat]
+        zoom: 13 // starting zoom
+    });
+</script>
+<script src="index.js"></script>
+</body>
+</html>
